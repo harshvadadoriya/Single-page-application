@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap Navbar Example</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar  -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light sticky-top container"
+    >
+      <div class="container main-nav">
+        <a class="navbar-brand" href="#">Alex Turnwall</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <button class="nav-link" onclick="scrollService()">Services</button>
+            <button class="nav-link" onclick="scrollBlog()">Blog</button>
+            <button class="nav-link" onclick="scrollAbout()">About</button>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Home Page  -->
+    <div class="home-section">
+      <div class="container">
+        <div class="main">
+          <div class="home-head">
+            <span class="home-head-title"
+              >Designer &
+              <p>Product Strategist</p></span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="home-row-one">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-12">
+              <p class="para-one">
+                I bring a founder’s mentality to designing products,
+                experiences, brands, and teams.
+              </p>
+            </div>
+            <div class="row home-row-two">
+              <div class="col-lg-6 col-md-12">
+                <p class="para-two">
+                  I've spent over a decade working with teams to ship products
+                  that delight users and advance organizations’ goals.
+                  <a>Learn More</a>
+                </p>
+              </div>
+              <div class="col-lg-6 col-md-12">
+                <p class="para-two">
+                  Staff UX Design Lead @Verily. Previously Head of Design
+                  <a>@Admithub</a>, Chief Design Officer <a>@BevSpot</a>,
+                  Lecturer @Northeastern
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Services Page  -->
+    <div class="service-section">
+      <div class="container">
+        <hr class="rule" />
+        <div class="home-section" id="service">
+          <div class="main">
+            <div class="home-head">
+              <span class="home-subhead-title"><p>Services</p></span>
+            </div>
+            <div class="row">
+              <div class="col-lg-8 col-md-12">
+                <p class="service-para-one">
+                  Weaving together UX, UI, and brand design with product
+                  management and frontend development.
+                </p>
+              </div>
+            </div>
+            <!-- <hr class="ruler" /> -->
+          </div>
+        </div>
+        <div class="row services-row" style="margin-top: 20px">
+          <div class="row">
+            <div class="sticky-top sticky col-md-2 col-lg-2">
+              <h5>Select Service</h5>
+              <a>All service</a>
+            </div>
+            <div class="col-xs-12 col-md-10">
+              <a>
+                <div class="container services-blogs">
+                  <div class="row">
+                    <div class="col-lg-8 col-md-12 service-image">
+                      <img
+                        src="Asset/service-saas.png"
+                        alt="saas"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <p class="service-title">CASE STUDY</p>
+                          <p class="service-title-two">AdmitHub AI Suite</p>
+                          <p class="service-description">
+                            Leading product design and user research of the SaaS
+                            platform helping educators use behavioral science to
+                            nudge students toward success. Being the first
+                            product designer on a team affords a unique
+                            opportunity
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <hr class="rule-sm" />
+            </div>
+            <div class="col-xs-12 col-md-2"></div>
+            <div class="col-xs-12 col-md-10">
+              <a>
+                <div class="container services-blogs">
+                  <div class="row">
+                    <div class="col-lg-8 col-md-12 service-image">
+                      <img
+                        src="Asset/IoT-device.jpg"
+                        alt="iot device"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <p class="service-title">CASE STUDY</p>
+                          <p class="service-title-two">Connected Proof</p>
+                          <p class="service-description">
+                            Designing the cross-device software for an
+                            industrial IoT platform to help make food and
+                            beverage production more sustainable. In a nutshell,
+                            our product is similar to the Nest learning
+                            thermostat, for industrial process controls.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <hr class="rule-sm" />
+            </div>
+            <div class="col-xs-12 col-md-2"></div>
+            <div class="col-xs-12 col-md-10">
+              <a>
+                <div class="container services-blogs">
+                  <div class="row">
+                    <div class="col-lg-8 col-md-12 service-image">
+                      <img
+                        src="Asset/Shopify-inventory.jpg"
+                        alt="inventory"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <p class="service-title">CASE STUDY</p>
+                          <p class="service-title-two">BevSpot Inventory</p>
+                          <p class="service-description">
+                            Leading the UX evolution of an industry-favorite app
+                            by working closely with customers and “taking over”
+                            their jobs for the day. BevSpot is the leading
+                            back-of-house operations SaaS product for Bars and
+                            Restaurants.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <!-- <hr class="rule-sm" /> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Blog section  -->
+    <div class="blog-section">
+      <div class="container">
+        <hr class="rule" />
+        <div class="home-section" id="blog">
+          <div class="main">
+            <div class="home-head">
+              <span class="home-subhead-title"><p>Blog</p></span>
+            </div>
+            <div class="row">
+              <div class="col-lg-8 col-md-12">
+                <p class="service-para-one">
+                  Infrequent writing about things like adventure, business,
+                  code, design, making, musings, updates, worklife, and more.
+                </p>
+              </div>
+            </div>
+            <!-- <hr class="ruler" /> -->
+          </div>
+        </div>
+        <div class="row services-row" style="margin-top: 20px">
+          <div class="row">
+            <div
+              class="sticky-top sticky col-md-2 col-lg-2"
+              style="margin-top: 20px"
+            >
+              <h5>Select Blogs</h5>
+              <a>All Blogs</a>
+            </div>
+            <div class="col-xs-12 col-md-10">
+              <a>
+                <div class="container services-blogs">
+                  <div class="row">
+                    <div class="col-lg-7 col-md-12 service-image">
+                      <p class="service-title">DESIGN</p>
+                      <p class="service-title-two">
+                        Bicycles are my design inspiration—a Rapha 5×5 talk
+                      </p>
+                      <p class="service-description">
+                        I was recently invited to speak at an event
+                        called&nbsp;Rapha 5×5: Intervals on Design at Fresh
+                        Tilled Soil, a local design consultancy. It’s a
+                        traveling series of design talks that Rapha runs in
+                        different cities, and here’s the schtick: “5×5:
+                        Intervals on Design, a rapid-fire design talk where five
+                        creatives will talk for five minutes…
+                      </p>
+                      <p class="service-title">8 minute read</p>
+                    </div>
+                    <div class="col-lg-5">
+                      <div class="row">
+                        <div class="col-md-12 blogs">
+                          <img
+                            src="Asset/bicycle.jpg"
+                            alt="bicycle"
+                            class="img-fluid"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <hr class="rule-sm" />
+            </div>
+            <div class="col-xs-12 col-md-2"></div>
+            <div class="col-xs-12 col-md-10">
+              <a>
+                <div class="container services-blogs">
+                  <div class="row">
+                    <div class="col-lg-7 col-md-12 service-image">
+                      <p class="service-title">ADVENTURE</p>
+                      <p class="service-title-two">
+                        Talking to a giant tanker from a little plastic boat
+                      </p>
+                      <p class="service-description">
+                        It’s kayaking season here in New England, and as I was
+                        returning to the water this year I realized I needed to
+                        reacquaint myself with VHF radio usage. So I’m going to
+                        share this story from last summer in hopes that it helps
+                        some other kayakers in a similar situation, as I haven’t
+                        found a ton…
+                      </p>
+                      <p class="service-title">9 minute read</p>
+                    </div>
+                    <div class="col-lg-5">
+                      <div class="row">
+                        <div class="col-md-12 blogs">
+                          <img
+                            src="Asset/boat.jpg"
+                            alt="boat"
+                            class="img-fluid"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <hr class="rule-sm" />
+            </div>
+            <div class="col-xs-12 col-md-2"></div>
+            <div class="col-xs-12 col-md-10">
+              <a>
+                <div class="container services-blogs">
+                  <div class="row">
+                    <div class="col-lg-7 col-md-12 service-image">
+                      <p class="service-title">DESIGN</p>
+                      <p class="service-title-two">
+                        Paying homage to (or stealing from) your inspiration
+                      </p>
+                      <p class="service-description">
+                        I had an idea for the new version of my site: I was
+                        going to illustrate objects using only HTML and CSS ( to
+                        show that I know how to do stuff with code), and make
+                        them look like they were neatly organized in a physical
+                        space* (which seems vaguely trendy) according to the
+                        underlying grid…
+                      </p>
+                      <p class="service-title">5 minute read</p>
+                    </div>
+                    <div class="col-lg-5">
+                      <div class="row">
+                        <div class="col-md-12 blogs">
+                          <img
+                            src="Asset/homeage.jpg"
+                            alt="homeage"
+                            class="img-fluid"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <!-- <hr class="rule-sm" /> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="About-section blog-section">
+      <div class="container" id="about">
+        <hr class="rule" />
+        <div class="home-section">
+          <div class="row">
+            <div class="home-head col-lg-6 col-md-12">
+              <span class="home-subhead-title"><p>About</p></span>
+              <p class="service-para-one">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+                nec risus eget nunc dictum feugiat.
+              </p>
+            </div>
+            <div class="col-lg-6 col-md-12 alex-image">
+              <img
+                src="Asset/Alex-image.png"
+                class="img-fluid float-end"
+                alt="Author Image"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <h2>About the Author</h2>
+          <div class="col-lg-8 col-md-12">
+            <p class="lead">
+              I’ve been called a ‘pragmatic’ designer. I take that as a
+              compliment.
+            </p>
+
+            <p>
+              My professional work slants towards product design that can make a
+              measurable impact. Usability over style. Stylish when called for.
+            </p>
+            <p>
+              Learning from your customers and shipping delightful, yet useful
+              tools for them is both rewarding and challenging, which is why
+              I've been drawn to working with early products, especially those
+              where you can get to know your users personally.
+            </p>
+            <p>
+              I’ve had the privilege of working with some great teams on some
+              truly impactful products, and have learned a thing or two along
+              the way. I bring that experience to new ventures and try to share
+              it with folks through mentoring and writing.
+            </p>
+            <p>
+              I tend to think about design like a founder, because I’ve been
+              one. Balancing process and instinct, the goal is to find harmony
+              between user delight and business strategy, as fast as you can
+              deliver quality.
+            </p>
+            <p>
+              If this seems like your cup of tea, I'd be pleased to chat about
+              your project needs. My availability is below.
+            </p>
+            <p>-Alex-</p>
+          </div>
+          <div class="col-lg-4 col-md-12 about">
+            <p><a>alex@turnwall.com</a></p>
+            <p><a>linkedin /alexturnwall</a></p>
+          </div>
+        </div>
+        <!-- <hr class="ruler" /> -->
+      </div>
+    </div>
+    <!-- Footer  -->
+    <div class="footer">
+      <div class="container">
+        <div class="row footer-content">
+          <div class="col-lg-2 main-footer">
+            <p><a>Alex Turnwall</a></p>
+          </div>
+          <div class="col-lg-6">
+            <p>
+              I’m a Boston-based designer, developer, and strategist. I consult,
+              write, and speak about design, entrepreneurship and technology.
+              You might also find me biking, kayaking, skiing, woodworking, or
+              brewing.
+            </p>
+          </div>
+          <div class="col-lg-2 col-md-4 footer-links">
+            <p>Get in touch:</p>
+            <p>Email <a>alex@turnwall.com</a> LinkedIn <a>/alexturnwall</a></p>
+          </div>
+        </div>
+        <p class="text-center footer-copyright">
+          Design and content © 2008-2023 by Alex Turnwall unless otherwise
+          noted, all rights reserved.
+        </p>
+      </div>
+    </div>
+    <!-- Bootstrap js CDN  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
